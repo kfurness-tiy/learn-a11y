@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Keyboard Navigation</title>
-
     <link rel="stylesheet" href="../css/bootstrap.min.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="../css/style.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./style.css" media="screen" charset="utf-8">
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -28,8 +28,8 @@
             <li><a href="#focus">Focus</a></li>
             <li><a href="#tabindex">Tabindex</a></li>
             <li><a href="#tabbable-items">Tabbable Items</a></li>
-            <li><a href="#skip-links">Skip Links</a></li>
             <li><a href="#form">Forms</a></li>
+            <li><a href="#skip-links" class="skip-links">Skip Links</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -69,7 +69,7 @@
         <main id="tabbable-items">
           <h2>Tabbable Items</h2>
 
-          <p>There is a list of all focusable selectors on my <a href="https://github.com/jkup/focusable">focusable repo</a>. They are:
+          <p>There is a list of all focusable selectors on my <a href="https://github.com/jkup/focusable">focusable repo</a>. They are: </p>
 
 <pre><code>a[href],
 area[href],
@@ -91,17 +91,17 @@ embed,
           <p>Learn more about <a href="http://webaim.org/techniques/skipnav/">Skip Links</a> here.</p>
 
           <h3>Your HTML</h3>
-<pre><code>&lt;a href="#maincontent" class="skip-link">
+<pre><code>&lt;a href="#maincontent" class="skip-link"&#62;
   Skip to main content
-&lt;/a>
+&lt;/a&#62;
 
-&lt;div class="navigation">
-  &lt;!-- Your navigation -->
-&lt;/div>
+&lt;div class="navigation"&#62;
+  &lt;!-- Your navigation --&#62;
+&lt;/div&#62;
 
-&lt;div id="maincontent" tabindex="-1">
-  &lt;!-- Your Content -->
-&lt;/div></code></pre>
+&lt;div id="maincontent" tabindex="-1"&#62;
+  &lt;!-- Your Content --&#62;
+&lt;/div&#62;</code></pre>
         </main>
 
         <main id="form">
@@ -123,7 +123,7 @@ embed,
               </select>
               <input type="checkbox"> Remember me
               <div class="btn btn-default">Cancel</div>
-              <div class="btn btn-primary">Submit</div>
+              <input class="btn btn-primary" type="submit">
             </fieldset>
           </form>
         </main>
@@ -131,6 +131,6 @@ embed,
     </div>
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/focus.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
