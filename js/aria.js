@@ -10,14 +10,18 @@ const randomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
+const renderCounter = () => {
+  number.innerHTML = ariaState.count;
+}
+
 const increment = (event) => {
   ariaState.count += randomNumber(1,20)
-  number.innerHTML = ariaState.count;
+  renderCounter()
 }
 
 const decrement = (event) => {
   ariaState.count -= randomNumber(1,20)
-  number.innerHTML = ariaState.count;
+  renderCounter()
 }
 
 incrementButton.addEventListener('click', increment)

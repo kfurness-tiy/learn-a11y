@@ -9,19 +9,28 @@ main {
   margin: 25px 0;
 }
 
+.colors {
+  background: powderblue;
+}
+
 .colors-one,
 .colors-one h2 {
-  color: #EBEA76;
+  background: cadetblue;
+  color: #000000
 }
 
 .colors-two,
 .colors-two h2 {
-  background: #00CD34;
-  color: #BC00BB;
+  background: cadetblue;
+  color: #000000;
 }
 
 .colors-three,
 .colors-three h2 {
-  background: green;
-  color: red;
+  background: cadetblue;
+  color: #000000;
+}
+
+.bigger-font p {
+  font-size: 20px
 }
